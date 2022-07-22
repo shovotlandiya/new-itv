@@ -1,0 +1,14 @@
+.nav__list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__item{
+    margin-left: 20px;
+}
+.nav__item a{
+    font-size: 18px;
+    color: #98999e;
+    text-decoration: none;
+}
