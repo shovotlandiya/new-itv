@@ -18,7 +18,7 @@ function Navbar() {
                 </li>
                 <li className='nav__item'>
                     <NavLink to="/serials">
-                    Фильмы
+                   Сериалы
                     </NavLink>
                 </li>
                 <li className='nav__item'>
