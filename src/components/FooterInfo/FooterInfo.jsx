@@ -6,25 +6,25 @@ function FooterInfo() {
     return (
         <div className='footer__info'>
             <div className='footer__inner__left'>
-                <h3>О нас</h3>
+                <h3 className='footer__title'>О нас</h3>
                 <ul className="footer__list">
                     <li className="footer__item">
-                        <NavLink className="footer__link" to="contact">Contacts</NavLink>
+                        <NavLink className="footer__link" to="contact">Контакты</NavLink>
                     </li>
                     <li className="footer__item">
-                        <NavLink className="footer__link" to="poddejka">Poddejka</NavLink>
+                        <NavLink className="footer__link" to="poddejka">Поддержка</NavLink>
                     </li>
                     <li className="footer__item">
-                        <NavLink className="footer__link" to="podpiski">Podpiski</NavLink>
+                        <NavLink className="footer__link" to="podpiski">Полписки</NavLink>
                     </li>
                     <li className="footer__item">
-                        <NavLink className="footer__link" to="postner">Partnor</NavLink>
+                        <NavLink className="footer__link" to="postner">Партнерам</NavLink>
                     </li>
                 </ul>
 
             </div>
             <div className="footer__inner__right">
-                <h3>Catalog</h3>
+                <h3 className='footer__title'>Catalog</h3>
 
                 <div className="footer__flex">
                     <ul className="footer__list">

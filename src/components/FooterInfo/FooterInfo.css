@@ -1,0 +1,31 @@
+.footer__info{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.footer__flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footer__item{
+    margin-bottom: 10px;
+}
+.footer__link{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #88878B;
+    
+}
+.footer__link:hover{
+    color: #fff;
+}
+.footer__title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
