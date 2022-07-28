@@ -7,6 +7,7 @@ function FooterApp() {
       <h3 className="footer__title">Приложения</h3>
       <ul className="footer__app__list">
         <li className="footer__app__item">
+          <a href="https://apps.apple.com/us/app/i-tv/id1144347735?l=ru&ls=1" target="_blank">
           <svg
             width="112"
             height="34"
@@ -31,10 +32,12 @@ function FooterApp() {
               fill="#fff"
             ></path>
           </svg>
+          </a>
         </li>
 
         <li className="footer__app__item">
-          <svg
+           <a href="https://itv.uz/apps/smart-tv" target="_blank">
+           <svg
             width="121"
             height="33"
             viewBox="0 0 121 33"
@@ -77,9 +80,11 @@ function FooterApp() {
               fill="#fff"
             ></path>
           </svg>
+           </a>
         </li>
         <li className="footer__app__item">
-          <svg
+         <a href="https://play.google.com/store/apps/details?id=uz.i_tv.player&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1" target="_blank">
+         <svg
             width="123"
             height="33"
             viewBox="0 0 123 33"
@@ -107,9 +112,11 @@ function FooterApp() {
               fill="#fff"
             ></path>
           </svg>
+         </a>
         </li>
 
         <li className="footer__app__item">
+          <a href="https://appgallery.huawei.com/#/app/C101850581" target="_blank">
           <svg
             width="128"
             height="33"
@@ -134,6 +141,7 @@ function FooterApp() {
               fill="#fff"
             ></path>
           </svg>
+          </a>
         </li>
       </ul>
     </div>
