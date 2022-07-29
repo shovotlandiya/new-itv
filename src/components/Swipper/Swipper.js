@@ -1,63 +1,86 @@
-  import React from 'react'
-  import "./Swipper.css"
-  import { Swiper, SwiperSlide } from "swiper/react";
+import Swipper1 from "../../assets/images/swipper1.jpeg";
+import Swipper2 from "../../assets/images/swipper2.jpeg";
+import Swipper3 from "../../assets/images/swipper3.jpeg";
+import Swipper4 from "../../assets/images/swipper4.jpeg";
+import Swipper5 from "../../assets/images/swipper5.jpeg";
+import Swipper6 from "../../assets/images/swipper6.jpeg";
+import Swipper7 from "../../assets/images/swipper7.jpeg";
+import Swipper8 from "../../assets/images/swipper8.jpeg";
+
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
-import Image from "../../assets/images/1.png"
-  
-  function Swipper() {
-    return (
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+
+import "./Swipper.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+
+export default function App() {
+  return (
+    <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
         <SwiperSlide>
           <div className="slider">
-            <img src={Image} />
+            <img src={Swipper1} alt="Swipper img"/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper2} alt="Swipper img" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper3} alt="Swipper img" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper4} alt="Swipper img" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper5} alt="Swipper img" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper6} alt="Swipper img" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper7} alt="Swipper img" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slider">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl83X-xp0NQUPhzWuozuMsWYHYFUp8T8NqQ&usqp=CAU" />
+            <img src={Swipper8} alt="Swipper img" />
           </div>
         </SwiperSlide>
       </Swiper>
-        
-    )
-  }
-  
-  export default Swipper
-  
+    </>
+  );
+}
+
+// export default Swipper;

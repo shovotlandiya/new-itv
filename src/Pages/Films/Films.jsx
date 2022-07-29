@@ -14,27 +14,28 @@ function Films() {
                 setApi(myApi)
 
             })
-            
-
     }
+    
     console.log(api);
     useEffect(() => getApi(), [])
     return (
         <div className='film'>
-                <h1>Фильмы</h1>
             <div className='container'>
-                {
-                   api.map((element)=>(
-                    <ul className='film__list'>
-                        <li className='film__item'  key={element.id}>
-                        
-                        <img className='film__image' src={element.poster} alt={element.titleEn} />
-                        <p>{element.title}</p>
-                        
-                    </li>
-                    </ul>
-                   )) 
-                }
+                <h1 className='film__title'>Фильмы</h1>
+                <div className="film__inner">
+                    {
+                        api.map((element) => (
+                            <ul className='film__list'>
+                                <li className='film__item' key={element.id}>
+
+                                    <img className='film__image' src={element.poster} alt={element.titleEn} />
+                                    <p className='film__text'>{element.title}</p>
+
+                                </li>
+                            </ul>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

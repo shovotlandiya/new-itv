@@ -1,19 +1,26 @@
-*{
+* {
   padding: 0;
-  margin: 0;box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-  --bodyColor:#1F1D24;
-  --mainColor:#29335C;
-  --mainColorRight:#5767aa;
-  --secondaryColor:red;
-  --textCoor:#eee;
+:root {
+  --bodyColor: #16151A;
+  --mainColor: #29335c;
+  --mainColorRight: #5767aa;
+  --secondaryColor: red;
+  --textCoor: #eee;
 }
-.container{
+.container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
-
+.App {
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

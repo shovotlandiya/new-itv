@@ -4,12 +4,13 @@
     padding: 40px;
     
 }
-.film .container{
+.film__inner{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .film__list{
     list-style-type: none;
+    margin-bottom: 40px;
 }
 .film__image{
     max-width: 210px;
@@ -17,4 +18,18 @@
     height: 310px;
     border-radius: 10px;
     cursor: pointer;
+}
+.film__title{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.film__text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 210px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
 }
