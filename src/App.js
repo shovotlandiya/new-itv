@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Films from "./Pages/Films/Films";
 import Home from "./Pages/Home/Home";
+import SinglePage from "./Pages/SinglePage/SinglePage";
 
 function App() {
   return (
@@ -16,7 +17,14 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/telev" element={<Films />} />
         <Route path="/film" element={<Films />} />
+        <Route path="/film/:id" element={<SinglePage />} />
+        <Route path="/serials" element={<Films />} />
+        <Route path="/cartoon" element={<Films />} />
+        <Route path="/catalog" element={<Films />} />
+        <Route path="/library" element={<Films />} />
+        <Route path="/podpiska" element={<Films />} />
       </Routes>
       <Footer />
     </div>

@@ -7,37 +7,37 @@ function Navbar() {
         <nav>
             <ul className='nav__list'>
                 <li className='nav__item'>
-                    <NavLink to="/telev">
+                    <NavLink className="link" to="/telev">
                     Телевидение
                     </NavLink>
                 </li>
                 <li className='nav__item'>
-                    <NavLink to="/film">
+                    <NavLink className="link" to="/film">
                     Фильмы
                     </NavLink>
                 </li>
                 <li className='nav__item'>
-                    <NavLink to="/serials">
+                    <NavLink className="link" to="/serials">
                    Сериалы
                     </NavLink>
                 </li>
                 <li className='nav__item'>
-                    <NavLink to="/cartoon">
+                    <NavLink className="link" to="/cartoon">
                     Мультфильмы
                     </NavLink>
                 </li>
                 <li className='nav__item'> 
-                    <NavLink to="/catalog">
+                    <NavLink className="link" to="/catalog">
                     Каталог
                     </NavLink>
                 </li>
                 <li className='nav__item'>
-                    <NavLink to="/library">
+                    <NavLink className="link" to="/library">
                     Библиотека
                     </NavLink>
                 </li>
                 <li className='nav__item'>
-                    <NavLink to="/podpiska">
+                    <NavLink className="link" to="/podpiska">
                     Подписки
                     </NavLink>
                 </li>

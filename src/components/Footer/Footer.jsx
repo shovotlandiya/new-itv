@@ -15,7 +15,7 @@ function Footer() {
                 <div className='footer__center'>
                    <FooterApp/>
                 </div>
-                <div className='grid__center'>
+                <div className='grid__right'>
                     <FooterSites/>
 
                 </div>

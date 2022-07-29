@@ -1,13 +1,13 @@
-.footer{
-    background-color: var(--bodyColor);
-    padding: 50px 0;
+.footer {
+  background-color: rgb(31, 29, 36);
+  padding: 50px 0;
 }
-.footer .container{
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr;
-    grid-column-gap: 20px;
+.footer .container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-column-gap: 20px;
 }
-.footer__center{
-    height: 100px;
-    width: 180px;
+.footer__center {
+  height: 100px;
+  width: 180px;
 }
