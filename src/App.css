@@ -5,11 +5,12 @@
 }
 
 :root {
+  --headerColor:rgb(31, 29, 36);
   --bodyColor: #16151A;
   --mainColor: #29335c;
   --mainColorRight: #5767aa;
   --secondaryColor: red;
-  --textCoor: #eee;
+  --textColor: #eee;
 }
 .container {
   max-width: 1440px;

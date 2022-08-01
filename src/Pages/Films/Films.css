@@ -21,19 +21,21 @@
   transform: scale(1.1);
 }
 .span {
+  z-index: 2;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   left: 0;
   display: none;
-  background-color: var(--bodyColor);
+  background-color: rgb(61, 63, 63);
   opacity: 0.6;
   width: 90%;
   height: 92%;
   border-radius: 10px;
 }
-.span::before {
+
+.span::after {
   content: "";
   background-image: url("../../assets/images/video2.png");
   background-repeat: no-repeat;
@@ -59,7 +61,7 @@
   margin-bottom: 30px;
 }
 .film__text {
-    text-decoration: none;
+  text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -68,6 +70,31 @@
   color: #fff;
   font-size: 16px;
 }
-.title{
-    text-decoration: none;
+.film__text::before {
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 1px 8px;
+  font-size: 14px;
+  font-weight: 900;
+
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  content: "Новинка";
+  background-color: rgb(125, 8, 109);
+}
+.title {
+  text-decoration: none;
+}
+.film__btn {
+  margin-bottom: 50px;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: var(--headerColor);
+  border: none;
+  color: var(--textColor);
 }
